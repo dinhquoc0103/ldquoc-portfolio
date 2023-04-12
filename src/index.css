@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        font-family: "poppins";
+        @apply bg-gray-900 text-gray-100;
+    }
+}
+
+@layer components {
+    .nav-item {
+        @apply px-6 uppercase text-lg text-left font-medium hover:text-cyan-600;
+    }
+
+    .btn {
+        @apply py-3 px-6 bg-cyan-600 rounded-full font-semibold;
+    }
+
+    .about-img::after {
+        @apply content-[''] w-full top-0 left-0 h-full rounded-xl rotate-12  bg-gray-600 absolute -z-10;
+    }
+
+    .skill-card {
+        @apply flex flex-col items-center justify-center p-10 bg-gray-900 rounded-xl border-2 border-solid border-cyan-600;
+    }
+
+    .project-card {
+        @apply p-4 rounded-xl bg-slate-700;
+    }  
+
+    .social-icons > svg {
+        @apply hover:text-white;
+    }
+}
+
+.swiper-pagination-bullet {
+    @apply bg-white;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    @apply text-white;
+}
