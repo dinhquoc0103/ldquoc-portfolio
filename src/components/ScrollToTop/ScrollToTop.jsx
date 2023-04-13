@@ -16,7 +16,7 @@ function ScrollToTop() {
         window.addEventListener("scroll", scrollToTop)
 
         return () => window.removeEventListener("scroll", scrollToTop)
-    })
+    }, [])
 
     const handleScrollToTop = () => {
         window.scrollTo(0, 0);

@@ -6,7 +6,7 @@ import Button from "../../../../components/Button"
 
 function Hero() {
     return (
-        <section id="#home" className="hero flex items-center pb-10">
+        <section id="home" className="hero flex items-center py-10">
             <div className="flex flex-1 justify-center items-center">
                 <img src={HERO_IMAGE} alt="hero image" className="w-11/12 h-full object-cover" />
             </div>
