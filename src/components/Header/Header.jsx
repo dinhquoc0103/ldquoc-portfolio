@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
+import { FiMenu } from "react-icons/fi"
+
 import Navbar from "../Navbar"
 
 function Header() {
@@ -16,9 +18,17 @@ function Header() {
         return () => window.addEventListener("scroll", handleStickyHeader)
     }, [stickyHeader])
 
+    const handleOpenMenu = useCallback(() => {
+        const mobileNav = document.querySelector(".mobile-nav")
+        mobileNav.style.left = "0"
+        const menuIcon = document.querySelector(".menu-icon")
+        menuIcon.style.display = "none"
+    })
+
+
     return (
         <header
-            className={`flex justify-between items-center fixed w-full z-[99] ${stickyHeader ? "bg-white/60 text-gray-900 transition duration-500 ease-in" : ''}`}
+            className={`flex justify-between lg:py-0 py-4 transition-[padding] duration-700 ease-in-out items-center fixed w-full z-[99] ${stickyHeader ? "bg-white/60 text-gray-900 transition duration-500 ease-in" : ''}`}
         >
             <div className="mx-7">
                 <h4 className="uppercase text-4xl font-semibold">
@@ -29,6 +39,13 @@ function Header() {
             </div>
 
             <Navbar stickyHeader={stickyHeader} />
+
+            <div
+                onClick={handleOpenMenu}
+                className={`menu-icon text-3xl mx-7 lg:hidden block cursor-pointer`}
+            >
+                <FiMenu />
+            </div>
         </header>
     )
 }
