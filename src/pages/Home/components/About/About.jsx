@@ -16,7 +16,7 @@ function About() {
                 <p className="my-3 text-lg text-gray-400 ">My Introduction</p>
 
                 <div className="max-w-6xl mx-auto px-10 flex flex-col-reverse md:flex-row gap-10 md:gap-6 items-center">
-                    <div className="px-2 py-5 text-gray-300 text-center md:text-left">
+                    <div className=" py-5 text-gray-300 text-center md:text-left">
                         <p className="text-justify w-11/12 mx-auto leading-7">
                             I'm Le Dinh Quoc, a web developer. I just graduated from
                             <b> University of Information Technology (UIT) </b>

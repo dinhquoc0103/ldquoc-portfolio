@@ -14,7 +14,7 @@ function Achievements() {
                 <p className="mt-3 text-lg text-gray-400">My achievements while studying at school</p>
             </div>
 
-            <div className="mt-24 py-5 px-8 bg-gray-700 max-w-4xl mx-auto rounded-2xl flex flex-col-reverse lg:flex-row items-center gap-6 relative min-h-[24rem]">
+            <div className="mt-10 mlg:mt-24 py-5 px-8 bg-gray-700 max-w-4xl mx-auto rounded-2xl flex flex-col-reverse lg:flex-row items-center gap-6 relative min-h-[24rem]">
                 <div className="max-w-lg ">
                     <h2 className="text-2xl font-semibold text-center md:text-left">Some academic achievements</h2>
 

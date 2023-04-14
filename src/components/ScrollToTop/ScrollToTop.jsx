@@ -23,7 +23,7 @@ function ScrollToTop() {
     }
 
     return (
-        <div className={`fixed bottom-14 right-20 ${onScrollToTop ? "visible" : "invisible"}`}>
+        <div className={`fixed z-[99] bottom-6 right-8 lg:bottom-14 lg:right-20 ${onScrollToTop ? "visible" : "invisible"}`}>
             <Button onClick={handleScrollToTop}>
                 <FaArrowUp />
             </Button>

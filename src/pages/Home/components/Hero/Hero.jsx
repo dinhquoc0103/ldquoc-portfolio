@@ -6,7 +6,7 @@ import Button from "../../../../components/Button"
 
 function Hero() {
     return (
-        <section id="home" className="hero min-h-screen flex flex-col md:flex-row items-center py-10">
+        <section id="home" className="hero  flex flex-col md:flex-row items-center pb-10 pt-20">
             <div className="flex flex-1 justify-center items-center md:h-full">
                 <img src={HERO_IMAGE} alt="hero image" className="w-11/12 md:h-full object-cover" />
             </div>
@@ -20,9 +20,11 @@ function Hero() {
 
                     <h4 className="text-gray-600 font-semibold text-xl lg:text-2xl mt-2">Web Developer</h4>
 
-                    <Button className="mt-7">
-                        Contact Me
-                    </Button>
+                    <a href="#contact">
+                        <Button className="mt-7">
+                            Contact Me
+                        </Button>
+                    </a>
 
                     <div className="social-icons flex gap-5 md:justify-start justify-center items-center text-3xl text-gray-600 mt-8 cursor-pointer">
                         <a target="_blank" href="https://www.instagram.com/">
