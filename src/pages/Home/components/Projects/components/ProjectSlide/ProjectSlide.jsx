@@ -17,7 +17,17 @@ function ProjectSlide() {
                 clickable: true
             }}
             spaceBetween={20}
-            slidesPerView={3}
+            breakpoints={{
+                640: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }}
         >
             {projects.map((project, index) => {
                 return (
