@@ -13,13 +13,13 @@ function Contact() {
                     <p className="text-lg text-gray-400 mt-3">Get in touch</p>
                 </div>
 
-                <div className="mt-16 p-8 max-w-5xl mx-auto bg-gray-800 rounded-lg grid grid-cols-2 gap-y-7">
+                <div className="mt-16 p-8 max-w-5xl mx-auto bg-gray-800 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-y-7">
                     {contactInfo.map((contact, index) => {
                         const IconComponent = contact.icon
 
                         return (
-                            <div key={index} className="flex items-center flex-wrap gap-4">
-                                <div className="bg-cyan-600 rounded-full text-3xl p-4">
+                            <div key={index} className="flex flex-col sm:flex-row items-center flex-wrap gap-4">
+                                <div className="bg-cyan-600 rounded-full text-2xl sm:text-3xl p-4">
                                     <IconComponent />
                                 </div>
                                 <p>{contact.text}</p>
