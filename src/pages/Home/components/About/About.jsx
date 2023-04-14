@@ -15,8 +15,8 @@ function About() {
 
                 <p className="my-3 text-lg text-gray-400 ">My Introduction</p>
 
-                <div className="max-w-6xl mx-auto px-10 flex items-center gap-6">
-                    <div className="px-2 py-5">
+                <div className="max-w-6xl mx-auto px-10 flex flex-col-reverse md:flex-row gap-10 md:gap-6 items-center">
+                    <div className="px-2 py-5 text-gray-300 text-center md:text-left">
                         <p className="text-justify w-11/12 mx-auto leading-7">
                             I'm Le Dinh Quoc, a web developer. I just graduated from
                             <b> University of Information Technology (UIT) </b>
@@ -26,12 +26,12 @@ function About() {
                             <b> JavaScript, ReactJS, Redux Toolkit, Tailwind CSS, PHP, Laravel, SQL, ... </b>
                             to solve problems at work and bring efficiency to the company. I believe with my ability and effort, I will try to complete the assigned task in the best way.</p>
 
-                        <div className="flex items-center gap-7 pt-9 ml-6">
-                            <div className="w-28">
+                        <div className="flex justify-center md:justify-start items-center gap-7 pt-9 md:ml-6">
+                            <div className="w-24 sm:w-28">
                                 <img src={UIT_LOGO} alt="uit logo" className="w-full object-cover" />
                             </div>
 
-                            <div className="w-28">
+                            <div className="w-24 sm:w-28">
                                 <img src={MMTT_LOGO} alt="mmtt logo" className="w-full object-cover" />
                             </div>
 
@@ -63,16 +63,16 @@ function About() {
                         </div>
                         <br />
                         <br />
-                        <div className="text-left ml-6">
+                        <div className="md:ml-6">
                             <Button>
                                 Download CV
                             </Button>
                         </div>
                     </div>
 
-                    <div className="flex justify-center items-center flex-1 ">
-                        <div className="w-96 h-full relative about-img">
-                            <img src={ABOUT_IMAGE} alt="About Me" className="bg-cyan-600 rounded-xl object-cover" />
+                    <div className="flex justify-center mt-6 md:mt-0 items-center flex-1 ">
+                        <div className="lg:w-96 w-10/12 max-w-sm h-full relative about-img">
+                            <img src={ABOUT_IMAGE} alt="About Me" className="bg-cyan-600 w-full rounded-xl object-cover" />
                         </div>
                     </div>
                 </div>
