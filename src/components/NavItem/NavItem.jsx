@@ -4,14 +4,16 @@ NavItem.propTypes = {
     item: PropTypes.object.isRequired,
 }
 
-function NavItem({ item, }) {
+function NavItem({ item, isMobileNav }) {
     const { title, hash } = item
 
     const handleCloseMenu = () => {
-        const mobileNav = document.querySelector(".mobile-nav")
-        mobileNav.style.left = "-100%"
-        const menuIcon = document.querySelector(".menu-icon")
-        menuIcon.style.display = "block"
+        if (isMobileNav) {
+            const mobileNav = document.querySelector(".mobile-nav")
+            mobileNav.style.left = "-100%"
+            const menuIcon = document.querySelector(".menu-icon")
+            menuIcon.style.display = "block"
+        }
     }
 
     return (

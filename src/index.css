@@ -36,8 +36,8 @@
         @apply p-4 rounded-xl bg-slate-700;
     }  
 
-    .social-icons > svg {
-        @apply hover:text-white;
+    .social-icons > a svg {
+        @apply hover:text-white transition duration-500;
     }
 }
 
