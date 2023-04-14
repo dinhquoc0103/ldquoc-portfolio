@@ -70,7 +70,7 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="flex justify-center mt-6 md:mt-0 items-center flex-1 ">
+                    <div className="flex justify-center mt-6 md:-mt-24 items-center flex-1 ">
                         <div className="lg:w-96 w-10/12 max-w-sm h-full relative about-img">
                             <img src={ABOUT_IMAGE} alt="About Me" className="bg-cyan-600 w-full rounded-xl object-cover" />
                         </div>
