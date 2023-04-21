@@ -29,7 +29,7 @@ function Achievements() {
                     </a>
                 </div>
 
-                <div className="lg:absolute h-80 lg:h-[32rem] lg:bottom-0 lg:-right-4">
+                <div className="lg:absolute h-80 lg:h-[32rem] lg:bottom-0 lg:right-1">
                     <img src={ACHIEVEMENTS_IMAGE} alt="My Achievements" className="w-full h-full object-cover" />
                 </div>
             </div>
